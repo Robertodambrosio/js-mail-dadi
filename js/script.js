@@ -31,9 +31,9 @@ let verify = false;
 
         // inserisco i dati
 
-            user=Math.floor(Math.random()* 6) +1;
+            user = Math.floor(Math.random()* 6) +1;
             console.log("il dato dell'utente ha come risultato " + user);
-            pc=Math.floor(Math.random()* 6) +1;  
+            pc = Math.floor(Math.random()* 6) +1;  
             console.log("il dato del pc ha come risultato " + pc); 
         // con una condizione verifico il vincitore tramite il risultato 
             if (user > pc){
