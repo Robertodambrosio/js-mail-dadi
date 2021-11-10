@@ -27,11 +27,9 @@ let verify = false
 
         let user;
         let pc;
-        let result;
 
         // apro un ciclo per lanciare i dati
 
-        for (let i = 1; i <= 1; i++){
             user=Math.floor(Math.random()* 6) +1;
             console.log("il dato dell'utente ha come risultato " + user);
             pc=Math.floor(Math.random()* 6) +1;  
@@ -39,16 +37,15 @@ let verify = false
         // con una condizione verifico il vincitore tramite il risultato 
             if (user > pc){
                 alert("user win")
-                console.log("L'utente ha vinto" + result);
+                console.log("L'utente ha vinto");
             } else if (user < pc) {
                 alert("pc win")
-                console.log("Il computer ha vinto" + result);
+                console.log("Il computer ha vinto");
             } else {
                 alert("pareggio")
-                console.log("pareggio" + result);
+                console.log("Pareggio ");
             }
             
-        }
   } else {
     alert('Accesso negato');
     }
