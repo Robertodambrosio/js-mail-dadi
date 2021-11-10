@@ -5,10 +5,10 @@
 // stampa un messaggio appropriato sull’esito del controllo.
 
 // // chiedo la mail all'utente 
- const mailUtente = prompt("Inserisci la tua mail");
+const mailUtente = prompt("Inserisci la tua mail");
 // // inserisco nell'array le mail valide
 const mailOk = ["luca00@gmail.com", "paolo121@gmail.com", "info@test.it"];
-let verify = false
+let verify = false;
 
 // // controllo l'array con un ciclo per vedere se la mail è corretta 
  for (let i = 0; i < mailOk.length; i++) {
@@ -19,6 +19,7 @@ let verify = false
 
 // //mando un alert per dare all'utente l'esito
  if (verify) {
+     document.getElementById("prova").innerHTML = "La mail è corretta";
      alert('Accesso consentito');
 
 // =========================LANCIO DADI
@@ -28,7 +29,7 @@ let verify = false
         let user;
         let pc;
 
-        // apro un ciclo per lanciare i dati
+        // inserisco i dati
 
             user=Math.floor(Math.random()* 6) +1;
             console.log("il dato dell'utente ha come risultato " + user);
@@ -47,6 +48,7 @@ let verify = false
             }
             
   } else {
+    document.getElementById("prova").innerHTML = "La mail non è corretta";
     alert('Accesso negato');
     }
 
